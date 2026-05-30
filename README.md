@@ -1,16 +1,46 @@
-# React + Vite
+صوت و صدى
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
+sout-wa-sada, also called voice and echo, is a react based web application dedicated to highlighting arabic music and cultural heritage. The website's goal is to give a glimpse of the arabic art, igniting users to explore more. This is achieved using an introduction dedicated to three of the legendary Arabic artists, providing mood-based song recommendations, an interactive personality quiz, hence exploring the relationship between poetry and music.
 
-Currently, two official plugins are available:
+Setup Instructions
+Clone the repository:
+git clone https://github.com/AlaaBarakat-star/sout-wa-sada.git
+Navigate to the project folder:
+cd sout-wa-sada
+Install dependencies:
+npm install
+Start the development server:
+npm run dev
+Open the local URL displayed in the terminal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+screenshots of the UI:
 
-## React Compiler
+##home page:
+![home page 1](screenshots/homee1.png)
+![home page 2](screenshots/home2.png)
+![home page 3](screenshots/home3.png)
+![home page 4](screenshots/home4.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##about page:
+![about page 1](screenshots/about1.png)
+![about page 2](screenshots/about1.png)
 
-## Expanding the ESLint configuration
+##artists page:
+![artists page 1](screenshots/artists1.png)
+![artists page 2](screenshots/artists2.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##mood page:
+![mood page ](screenshots/mood.png)
+
+##quiz page:
+![quiz page ](screenshots/quiz.png)
+
+##poetry page:
+![poetry page 1](screenshots/poetry1.png)
+![poetry page 2](screenshots/poetry2.png)
+![poetry page 3](screenshots/poetry3.png)
+![poetry page 4](screenshots/poetry4.png)
+![poetry page 5](screenshots/poetry5.png)
+
+
