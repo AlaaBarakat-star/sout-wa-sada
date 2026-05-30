@@ -1,0 +1,504 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color:#111;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+.page{
+  height:90vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:20px;
+}
+
+.page-text h1{
+  font-size: 50px;
+  color:#d4af37;
+  margin-bottom: 20px;
+
+}
+
+.page-text p{
+  font-size: 22px;
+  max-width: 700px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #ddd;
+
+}
+
+.home-sec{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.home-sec h2{
+  font-size:45px;
+  color:#d4af37;
+  margin-bottom:50px;
+}
+
+.home-cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.home-card{
+  width:320px;
+  background-color:#1b1b1b;
+  padding:30px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.home-card:hover{
+  transform:translateY(-10px);
+}
+
+.home-card h3{
+  color:#d4af37;
+  margin-bottom:20px;
+  font-size:28px;
+}
+
+.home-card p{
+  line-height:1.8;
+  color:#ddd;
+}
+
+.artists-sec{
+  padding:80px 50px;
+  text-align:center;
+}
+
+.artists-sec h1{
+  font-size:50px;
+  margin-bottom:50px;
+  color:#d4af37;
+}
+
+.artists-box{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.artist-card{
+  background-color:#1b1b1b;
+  width:300px;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.3s;
+  padding-bottom:20px;
+}
+
+.artist-card:hover{
+  transform:translateY(-10px);
+}
+
+.artist-card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+.artist-card h2{
+  margin-top:20px;
+  margin-bottom:15px;
+  color:#d4af37;
+}
+
+.artist-card p{
+  padding:0 20px;
+  line-height:1.7;
+  color:#ccc;
+}
+
+.artist-details {
+  padding: 10px 20px;
+  text-align: left;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+}
+
+.artist-details p {
+  font-size: 13px;
+  padding: 5px 0;
+  margin: 0;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.artist-details strong {
+  color: #d4af37;
+}
+
+.mood-sec{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.mood-sec h1{
+  font-size:50px;
+  margin-bottom:40px;
+  color:#d4af37;
+}
+
+.mood-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:40px;
+}
+
+.mood-buttons button{
+  padding:15px 30px;
+  border:none;
+  border-radius:10px;
+  background-color:#d4af37;
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.mood-buttons button:hover{
+  background-color:white;
+}
+
+.song-result{
+  margin-top:30px;
+}
+
+.song-result h2{
+  color:#ddd;
+  font-size:28px;
+}
+
+.quiz-sec{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.quiz-sec h1{
+  font-size:50px;
+  margin-bottom:40px;
+  color:#d4af37;
+}
+
+.question-box{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items:center;
+}
+
+.question-box button{
+  width:300px;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background-color:#d4af37;
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.question-box button:hover{
+  background-color:white;
+}
+
+.quiz-result{
+  margin-top:40px;
+}
+
+.quiz-result h2{
+  color:#ddd;
+  font-size:30px;
+}
+
+.question-box button.selected {
+  background-color: #af5328;
+  color: white;
+  border: 2px solid #d4af37;
+  transform: scale(1.02);
+}
+
+.about-sec{
+  padding:80px 20px;
+  text-align:center;
+  min-height:100vh;
+}
+
+.about-sec h1{
+  font-size:55px;
+  color:#d4af37;
+  margin-bottom:25px;
+}
+
+.about-intro{
+  max-width:800px;
+  margin:auto;
+  margin-bottom:60px;
+  line-height:2;
+  font-size:20px;
+  color:#ddd;
+}
+
+.about-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.about-card{
+  background-color:#1b1b1b;
+  width:320px;
+  padding:35px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.about-card:hover{
+  transform:translateY(-10px);
+}
+
+.about-card h2{
+  color:#d4af37;
+  margin-bottom:20px;
+}
+
+.about-card p{
+  line-height:1.9;
+  color:#ccc;
+}
+
+.poetry-sec{
+  background:linear-gradient(to bottom,#111,#1a120b);
+  color:white;
+  min-height:100vh;
+  direction:rtl;
+  padding-bottom:100px;
+}
+
+.poetry-page{
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.poetry-page h1{
+  font-size:65px;
+  line-height:2;
+  color:#f5e6c8;
+  max-width:1000px;
+}
+
+.gold-line{
+  width:200px;
+  height:3px;
+  background-color:#d4af37;
+  margin-top:40px;
+}
+
+.poetry-intro{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  padding:40px 20px;
+  margin-bottom:80px;
+}
+
+.poetry-intro h2{
+  color:#d4af37;
+  font-size:45px;
+  margin-bottom:30px;
+}
+
+.poetry-intro p{
+  line-height:2.2;
+  font-size:22px;
+  color:#ddd;
+  margin-bottom:25px;
+}
+
+.poets-sec{
+  display:flex;
+  flex-direction:column;
+  gap:60px;
+  padding:20px;
+}
+
+.poet-block{
+  background-color:#24170f;
+  padding:50px;
+  border-right:5px solid #d4af37;
+  border-radius:20px;
+  max-width:1100px;
+  margin:auto;
+  box-shadow:0 0 20px rgba(212,175,55,0.1);
+}
+
+.poet-block h2{
+  color:#d4af37;
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.poet-block span{
+  color:#bbb;
+  font-size:18px;
+}
+
+.poet-verse{
+  font-size:34px;
+  line-height:2;
+  color:#fff7e6;
+  margin:35px 0;
+}
+
+.poet-block p{
+  line-height:2;
+  color:#ddd;
+  font-size:20px;
+}
+
+.songs-section{
+  margin-top:120px;
+  text-align:center;
+  padding:20px;
+}
+
+.songs-section h2{
+  font-size:50px;
+  color:#d4af37;
+  margin-bottom:60px;
+}
+
+.song-block{
+  background-color:#1b1b1b;
+  max-width:900px;
+  margin:30px auto;
+  padding:40px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.song-block:hover{
+  transform:translateY(-5px);
+}
+
+.song-block h3{
+  color:#d4af37;
+  margin-bottom:20px;
+  font-size:30px;
+}
+
+.song-block p{
+  color:#ddd;
+  line-height:2;
+  font-size:20px;
+}
+
+.final-quote{
+  margin-top:120px;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.final-quote h2{
+  font-size:55px;
+  line-height:2;
+  color:#f5e6c8;
+}
+
+
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .page-text h1{
+    font-size:55px;
+  }
+
+  .page-text p{
+    font-size:18px;
+  }
+
+  .artists-sec h1,
+  .mood-sec h1,
+  .quiz-sect h1,
+  .poetry-sec h1,
+  .about-sec h1{
+    font-size:38px;
+  }
+
+  .artist-card,
+  .poetry-card,
+  .about-card{
+    width:90%;
+  }
+
+  .question-box button{
+    width:90%;
+  }
+
+  .poetry-page h1{
+    font-size:38px;
+  }
+
+  .poetry-intro h2,
+  .songs-sec h2{
+    font-size:35px;
+  }
+
+  .poet-block{
+    padding:30px;
+  }
+
+  .poet-block h2{
+    font-size:32px;
+  }
+
+  .poet-verse{
+    font-size:26px;
+  }
+
+  .final-quote h2{
+    font-size:35px;
+  }
+
+}
